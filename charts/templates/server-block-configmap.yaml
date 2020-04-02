@@ -5,6 +5,6 @@ metadata:
   name: {{ template "nginx.fullname" . }}
   labels: {{- include "nginx.labels" . | nindent 4 }}
 data:
-  server-block.conf: |-
+  nginx.conf: |-
 {{ .Values.serverBlock | indent 4 }}
 {{- end -}}
