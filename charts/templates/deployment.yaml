@@ -50,7 +50,7 @@ spec:
           volumeMounts:
             - name: nginx-server-block
               mountPath: /opt/bitnami/nginx/conf/server_blocks
-              subbath: nginx.conf
+              subPath: nginx.conf
           {{- end }}
         {{- if .Values.metrics.enabled }}
         - name: metrics
