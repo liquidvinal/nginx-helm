@@ -37,7 +37,19 @@ image:
 serverBlock: |-
   server {
     listen 0.0.0.0:8080;
-     rewrite ^/cloudforward/?$ /cloud-forward permanent;
+        rewrite ^/conferences/2015/ReinventingAmerica-Chicago.html http://www.forbesconferences.com/event/2015-forbes-reinventing-america-summit/ permanent;
+  		  rewrite ^/conferences/2015/ReinventingAmerica-Detroit.html http://www.forbesconferences.com/event/2015-forbes-reinventing-america-the-talent-summit/ permanent;
+  		  rewrite ^/conferences/2014/ReinventingAmerica-Indy.html http://www.forbesconferences.com/event/2014-reinventing-america-the-innovation-summit/ permanent;
+  		  rewrite ^/conferences/2015/WomensSummit.html http://www.forbesconferences.com/event/2015-forbes-womens-summit/ permanent;
+  		  rewrite ^/conferences/2015/Under30Summit.html http://www.forbesconferences.com/event/2015-forbes-under-30-summit/ permanent;
+  		  rewrite ^/conferences/2014/ReinventingAmerica-2014.html http://www.forbesconferences.com/event/2014-forbes-reinventing-america-summit/ permanent;
+  		  rewrite ^/conferences/2014/forbeswomen-2014.html http://www.forbesconferences.com/event/2014-forbes-womens-summit permanent;
+  		  rewrite ^/conferences/2014/400-2014.html http://www.forbesconferences.com/event/2014-forbes-400-summit-on-philanthropy/ permanent;
+  		  rewrite ^/conferences/2014/under30-2014.html http://www.forbesconferences.com/event/2014-forbes-under-30-summit/ permanent;
+  		  rewrite ^/conferences/2014/cio-2014.html http://www.forbesconferences.com/event/2014-forbes-cio-summit/ permanent;
+  		  rewrite ^/conferences/2014/cmo-2014.html http://www.forbesconferences.com/event/2014-forbes-cmo-summit/ permanent;
+  		  rewrite ^/conferences/2014/healthcare-2014.html http://www.forbesconferences.com/event/2014-forbes-healthcare-summit/ permanent;
+		    rewrite ^/conferences/2013/ReinventingAmerica-2013.html$ /conferences/2014/ReinventingAmerica-2014.html permanent;
   }
 
 ## Number of replicas to deploy
