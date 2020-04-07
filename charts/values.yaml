@@ -37,7 +37,7 @@ image:
 serverBlock: |-
   server {
     listen 0.0.0.0:8080;
-   location /ebooks {
+   	location /ebooks {
 		  rewrite ^/ebooks/wealth-doctors-wall-streets-hottest-career/?$ /ebooks/ permanent;
 		  rewrite ^/ebooks/curbing-cars-americas-independence-from-the-auto-industry/?$ /ebooks/ permanent;
 		  rewrite ^/ebooks/fanboy-wars-the-fight-for-the-future-of-video-games/?$ /ebooks/ permanent;
