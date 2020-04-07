@@ -49,8 +49,7 @@ spec:
           {{- if .Values.serverBlock }}
           volumeMounts:
             - name: nginx-server-block
-              mountPath: /opt/bitnami/nginx/conf/server_blocks  
-              subPath: nginx.conf
+              mountPath: /opt/bitnami/nginx/conf/server_blocks
           {{- end }}
         {{- if .Values.metrics.enabled }}
         - name: metrics
