@@ -41,7 +41,6 @@ serverBlock: |-
       return 200 "It Works!";
     }
   }
- serverBlock:
 
 ## Number of replicas to deploy
 ##
