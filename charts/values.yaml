@@ -37,9 +37,7 @@ image:
 serverBlock: |-
   server {
     listen 0.0.0.0:8080;
-   	location /cloudforward {
-		  rewrite ^/cloudforward/?$ /cloud-forward permanent;
-		}
+     rewrite ^/cloudforward/?$ /cloud-forward permanent;
   }
 
 ## Number of replicas to deploy
