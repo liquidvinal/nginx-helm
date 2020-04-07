@@ -34,23 +34,14 @@ image:
 ##
 # fullnameOverride:
 
-## Custom server block to be added to NGINX configuration
-## PHP-FPM example server block:
-## serverBlock: |-
-##   server {
-##     listen 0.0.0.0:8080;
-##     root /app;
-##     location / {
-##       index index.html index.php;
-##     }
-##     location ~ \.php$ {
-##       fastcgi_pass phpfpm-server:9000;
-##       fastcgi_index index.php;
-##       include fastcgi.conf;
-##     }
-##   }
-##
-# serverBlock:
+serverBlock: |-
+  server {
+    listen 0.0.0.0:8080;
+    location / {
+      return 200 "It Works!";
+    }
+  }
+ serverBlock:
 
 ## Number of replicas to deploy
 ##
