@@ -37,40 +37,9 @@ image:
 serverBlock: |-
   server {
     listen 0.0.0.0:8080;
-   	location /ebooks {
-		  rewrite ^/ebooks/wealth-doctors-wall-streets-hottest-career/?$ /ebooks/ permanent;
-		  rewrite ^/ebooks/curbing-cars-americas-independence-from-the-auto-industry/?$ /ebooks/ permanent;
-		  rewrite ^/ebooks/fanboy-wars-the-fight-for-the-future-of-video-games/?$ /ebooks/ permanent;
-		  rewrite ^/ebooks/the-millennial-game-plan-career-and-money-secrets-to-succeed-in-todays-world/?$ /ebooks/ permanent;
-		  rewrite ^/ebooks/inside-obamacare-the-fix-for-americas-ailing-health-care-system/?$ /ebooks/ permanent;
-		  rewrite ^/ebooks/secret-money-living-on-bitcoin/?$ /ebooks/ permanent;
-		  rewrite ^/ebooks/win-at-work/?$ /ebooks/ permanent;
-		  rewrite ^/ebooks/beyond-pr/?$ /ebooks/ permanent;
-		  rewrite ^/ebooks/home-sweet-rental/?$ /ebooks/ permanent;
-		  rewrite ^/ebooks/secrets-from-an-ex-banker/?$ /ebooks/ permanent;
-		  rewrite ^/ebooks/democracys-problems-and-prospects/?$ /ebooks/ permanent;
-		  rewrite ^/ebooks/the-internet-of-garbage/?$ /ebooks/ permanent;
-		  rewrite ^/ebooks/hometown-holdouts/?$ /ebooks/ permanent;
-		  rewrite ^/ebooks/ask-the-taxgirl/?$ /ebooks/ permanent;
-		  rewrite ^/ebooks/the-art-of-putzing/?$ /ebooks/ permanent;
-		  rewrite ^/ebooks/retirement-risks/?$ /ebooks/ permanent;
-		  rewrite ^/ebooks/retirement-success-in-10-steps/?$ /ebooks/ permanent;
-		  rewrite ^/ebooks/making-the-forbes-list/?$ /ebooks/ permanent;
-		  rewrite ^/ebooks/debt-free-degree/?$ /ebooks/ permanent;
-		  rewrite ^/ebooks/booms-busts-billionaires/?$ /ebooks/ permanent;
-		  rewrite ^/ebooks/unmasked-the-man-behind-the-silk-road/?$ /ebooks/ permanent;
-		  rewrite ^/ebooks/the-diversity-advantage/?$ /ebooks/ permanent;
-		  rewrite ^/ebooks/your-customer-is-the-star/?$ /ebooks/ permanent;
-		  rewrite ^/ebooks/their-roaring-thirties/?$ /ebooks/ permanent;
-		  rewrite ^/ebooks/broken-ladders/?$ /ebooks/ permanent;
-		  rewrite ^/ebooks/the-case-against-obamacare/?$ /ebooks/ permanent;
-		  rewrite ^/ebooks/money-hacks/?$ /ebooks/ permanent;
-		  rewrite ^/ebooks/the-forbes-crash-course-in-investing/?$ /ebooks/ permanent;
-		  rewrite ^/ebooks/richer-in-7-hours/?$ /ebooks/ permanent;
-		  rewrite ^/ebooks/jump-ship/?$ /ebooks/ permanent;
-		  rewrite ^/ebooks/fighting-for-a-fix/?$ /ebooks/ permanent;
-		  rewrite ^/ebooks/bail-on-your-bank/?$ /ebooks/ permanent;
-    }
+   	location /cloudforward {
+		  rewrite ^/cloudforward/?$ /cloud-forward permanent;
+		}
   }
 
 ## Number of replicas to deploy
