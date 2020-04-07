@@ -37,7 +37,7 @@ image:
 serverBlock: |-
   server {
     listen 0.0.0.0:8080;
-    location / {
+    location /test {
       return 200 "It Works!";
     }
   }
